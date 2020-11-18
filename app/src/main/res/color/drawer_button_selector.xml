@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~  * Created by Alvi Khalil on 4/5/19 5:40 PM
+  ~  * Copyright (c) 2019 . All rights reserved.
+  ~  * Last modified 2/20/19 3:31 PM
+  ~  */
+  -->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true" android:color="@color/buttons" />
+    <item android:state_focused="true" android:color="@color/buttons" />
+    <item android:state_pressed="true" android:color="@color/buttons" />
+    <item android:color="@color/colorPrimaryDark" /> <!-- default case -->
+</selector>

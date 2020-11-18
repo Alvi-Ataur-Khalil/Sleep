@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Stories">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/maincons"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bottom_tary"
+        >
+
+
+        <include layout="@layout/main_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_tary"
+        android:background="@drawable/shadow_bottom_to_top"/>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/bottom_tary">
+
+
+        <ImageView
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:id="@+id/home_bg"
+            android:src="@drawable/home"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="@id/guidelinev1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/guidelineh2"
+            android:padding="12dp"
+            android:tint="@color/drawer_text_selector"
+            android:background="@drawable/bg_home_button"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="@color/drawer_button_selector"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            app:layout_constraintTop_toBottomOf="@id/guidelineh2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="@+id/home_bg"
+            app:layout_constraintRight_toRightOf="@+id/home_bg"
+            android:fontFamily="@font/helveticaneue_medium"
+            android:textColor="@color/drawer_text_selector"
+            android:id="@+id/t1"/>
+
+        <ImageView
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:id="@+id/sleep_bg"
+            android:src="@drawable/moon2"
+            app:layout_constraintLeft_toLeftOf="@id/guidelinev1"
+            app:layout_constraintRight_toRightOf="@id/guidelinev2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/guidelineh2"
+            android:padding="12dp"
+            android:tint="@color/drawer_text_selector"
+            android:background="@drawable/bg_home_button"
+            android:backgroundTint="@color/drawer_button_selector"
+            android:layout_marginTop="12dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sleep"
+            app:layout_constraintTop_toBottomOf="@id/guidelineh2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="@+id/sleep_bg"
+            app:layout_constraintRight_toRightOf="@+id/sleep_bg"
+            android:fontFamily="@font/helveticaneue_medium"
+            android:textColor="@color/drawer_text_selector"
+            android:id="@+id/t2"/>
+
+        <ImageView
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:id="@+id/meditate_bg"
+            android:src="@drawable/meditate"
+            app:layout_constraintLeft_toLeftOf="@id/guidelinev2"
+            app:layout_constraintRight_toRightOf="@id/guidelinev3"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/guidelineh2"
+            android:padding="12dp"
+            android:tint="@color/drawer_text_selector"
+            android:background="@drawable/bg_home_button"
+            android:backgroundTint="@color/drawer_button_selector"
+            android:layout_marginTop="12dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Meditate"
+            app:layout_constraintTop_toBottomOf="@id/guidelineh2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="@+id/meditate_bg"
+            app:layout_constraintRight_toRightOf="@+id/meditate_bg"
+            android:fontFamily="@font/helveticaneue_medium"
+            android:textColor="@color/drawer_text_selector"
+            android:id="@+id/t3"/>
+
+        <ImageView
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:id="@+id/music_bg"
+            android:src="@drawable/music"
+            app:layout_constraintLeft_toLeftOf="@id/guidelinev3"
+            app:layout_constraintRight_toRightOf="@id/guidelinev4"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/guidelineh2"
+            android:padding="12dp"
+            android:tint="@color/drawer_text_selector"
+            android:background="@drawable/bg_home_button"
+            android:backgroundTint="@color/drawer_button_selector"
+            android:layout_marginTop="12dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Music"
+            app:layout_constraintTop_toBottomOf="@id/guidelineh2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="@+id/music_bg"
+            app:layout_constraintRight_toRightOf="@+id/music_bg"
+            android:fontFamily="@font/helveticaneue_medium"
+            android:textColor="@color/drawer_text_selector"
+            android:id="@+id/t4"/>
+
+        <ImageView
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:id="@+id/user_bg"
+            android:src="@drawable/user"
+            app:layout_constraintLeft_toLeftOf="@id/guidelinev4"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/guidelineh2"
+            android:padding="13dp"
+            android:tint="@color/drawer_text_selector"
+            android:background="@drawable/bg_home_button"
+            android:backgroundTint="@color/drawer_button_selector"
+            android:layout_marginTop="12dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alvi"
+            app:layout_constraintTop_toBottomOf="@id/guidelineh2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="@+id/user_bg"
+            app:layout_constraintRight_toRightOf="@+id/user_bg"
+            android:fontFamily="@font/helveticaneue_medium"
+            android:textColor="@color/drawer_text_selector"
+            android:id="@+id/t5"/>
+
+
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guidelinev1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".2" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guidelinev2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".4" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guidelinev3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".6" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guidelinev4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".8" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guidelineh2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent=".65" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guidelineh1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".9" />
+
+
+</android.support.constraint.ConstraintLayout>

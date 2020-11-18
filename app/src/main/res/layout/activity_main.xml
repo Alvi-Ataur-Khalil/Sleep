@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/welcome_sleep"
+        android:scaleType="centerCrop"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="0dp"
+        android:src="@drawable/moon"
+        android:tint="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/guidelineV1"
+
+        app:layout_constraintBottom_toTopOf="@id/header"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Sleep"
+        android:fontFamily="@font/helveticaneu_bold"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@id/small_text"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/header"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Explore the new king of sleep. It uses sound and visualization to create perfect conditions for refreshing sleep."
+        android:fontFamily="@font/helveticaneue_light"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@id/birds"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:gravity="center"
+        android:textSize="16dp"
+        android:id="@+id/small_text"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="10dp"/>
+
+    <!--<ImageView-->
+        <!--android:layout_width="300dp"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:src="@drawable/birds"-->
+        <!--app:layout_constraintTop_toBottomOf="@id/guideline"-->
+        <!--app:layout_constraintBottom_toTopOf="@id/guideline2"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--android:id="@+id/birds"/>-->
+
+    <!--<ImageView-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:src="@drawable/birds"-->
+        <!--app:layout_constraintTop_toBottomOf="@id/guideline"-->
+        <!--app:layout_constraintBottom_toTopOf="@id/guideline2"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--android:layout_marginTop="25dp"-->
+        <!--android:layout_marginBottom="25dp"-->
+        <!--android:id="@+id/birds"-->
+        <!--android:scaleType="fitEnd"/>-->
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/birds"
+        app:layout_constraintTop_toBottomOf="@id/guideline"
+        app:layout_constraintBottom_toTopOf="@id/guideline2"
+        android:id="@+id/birds"
+        android:scaleType="fitEnd"
+        android:layout_marginLeft="30dp"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/bg_blue_button_radius_30"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginBottom="45dp"
+        android:text="GET STARTED"
+        android:textColor="@color/white"
+        android:id="@+id/get_started"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".35" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".7" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guidelineV1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".18" />
+
+
+
+
+</android.support.constraint.ConstraintLayout>

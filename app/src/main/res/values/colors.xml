@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <color name="colorPrimary">#1F265E</color>
+        <color name="colorPrimaryDark">#03174D</color>
+        <color name="colorPrimaryLight">#1F265E</color>
+        <color name="colorAccent">#1F265E</color>
+        <color name="white">#fff</color>
+        <color name="black">#000</color>
+        <color name="buttons">#8E97FD</color>
+        <color name="homeDim">#98A1BD</color>
+        <color name="upDim">#586894</color>
+        <color name="rel">#c6e6e7f2</color>
+
+</resources>
